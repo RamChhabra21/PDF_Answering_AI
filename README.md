@@ -24,11 +24,9 @@ Ask your questions with context to your own reference PDF data.
 
 4. Run the application:
 
-    ```bash
-    python app.py
-    ```
+    run using standard button after navigating to answering_code.py file
 
-5. Open your web browser and go to `http://localhost:5000` to access the PDF Answering AI application.
+5. Open your web browser and go to `http://127.0.0.1:5000` to access the PDF Answering AI application.
 
 ## Contributing
 
