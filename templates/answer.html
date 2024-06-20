@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Answer</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>Question Answering System</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/questions">Ask a Question</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="main">
+        <div class="container bgblack">
+            <h1>Your Question: {{ question }}</h1>
+            <h2>Answer:</h2>
+            <p>{{ answer }}</p>
+            <a href="/questions">Ask another question</a>
+        </div>
+    </section>
+    <footer>
+        <p>Question Answering System &copy; 2024</p>
+    </footer>
+</body>
+</html>

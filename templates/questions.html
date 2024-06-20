@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ask a Question</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <h1>Question Answering System</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/questions">Ask a Question</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section id="main">
+      <div class="container">
+        <h1>Ask a Question</h1>
+        <form action="/answer" method="post">
+          <textarea name="question" rows="4" cols="50"></textarea>
+          <button type="submit" name="submit_type" value="simple">
+            Literal Ask
+          </button>
+          <button type="submit" name="submit_type" value="transformer">
+            Generated Ask Transformer
+          </button>
+        </form>
+        <div class="trans-text">
+          Transformer may take longer time to generate the answer. Please Wait (
+          > 1 min)
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>Question Answering System &copy; 2024</p>
+    </footer>
+  </body>
+</html>
